@@ -1,65 +1,14 @@
+from  hangman_words import word
+
+from hangman_arts import logo, stag
 
 import random
-word_list = ["aardvark", "baboon", "camel", "karmel", "haushaltskuechengeraet","anwalt", "sieger", "loser", "gewonnen"]
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
+
+stages = stag
+print(logo)
 display=[]
 
-list= random.choice(word_list)
+list= random.choice(word)
 
 for letter in list:
        display+="_"   
@@ -98,19 +47,4 @@ while not end_of_game:
 
 
             
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
 
