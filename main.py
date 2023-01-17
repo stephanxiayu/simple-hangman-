@@ -2,6 +2,8 @@ from  hangman_words import word
 
 from hangman_arts import logo, stag
 
+from replit import clear
+
 import random
 
 stages = stag
@@ -17,7 +19,7 @@ end_of_game=False
 while not end_of_game:
    
         buchstabe=input("rate ein Buchstaben: ").lower()
-    
+        clear()
         for position in range(len(list)):
              letter=list[position]
              if letter ==buchstabe:
